@@ -1,0 +1,108 @@
+MÓDULO 01 - Introdução ao ES6
+AULA 01 - História e conceitos
+
+- Lançado em setembro de 1995
+- Criado por Brendan Eich
+
+ECMAScript
+Especificação de padronização da linguagem de programação, servido como base para novas linguagens
+
+TC39
+Comitê responsável pela atualização do ECMAScript
+
+Fluxo de proposta
+- Stage 0: strawman (obrigatório: descrição básica)
+- Stage 1: proposal (obrigatório: campeão)
+- Stage 2: draft (obrigatório: descrição completa - semântica/sintaxe)
+- Stage 3: candidate (obrigatório: 2 implementações compatíveis com TC39)
+- Stage 4: finished (proposta madura, passar nos testes)
+
+ES2018
+- operadores rest/spread
+- iteração assíncrona
+- promise.prototype.finally()
+ESNEXT
+
+Características JS
+- Linguagem interpretada (código compilado de cima pra baixo)
+- Linguagem de tipagem fraca (concaterna int + string)
+- Linguagem de tipagem dinâmica (não precisa dizer o tipo da variavel na sua declaração, é dinâmica)
+
+TypesScript 
+- superset da linguagem javascript
+- adiciona tipos no desenvolvimento javascript
+- adiciona funcionalidade que não vem por padrão (interface, enum)
+
+Flow
+- versão mais simplificado do Typescript
+
+Funções de primeira classe e ordem maior:
+Podem ser atribuidas a uma variavel, a uma estrutura de dados - object/array, ser passada por argumentos e retornava por outras funções.
+Pode 
+
+Closure: escopo léxico
+É a capacidade de uma função lembrar do ambiente em que ela foi criada. É um emaranhado de funções, na prática é bom evitar. Na prática, é melhor usar FUNÇÕES PURAS, ou seja, funções que passam um parâmetro e retornam um parâmetro.
+
+
+AULA 02 - Currying, Hoisting, Imutabilidade, Tipos e Variáveis
+
+Currying
+O Javascript não é uma linguagem funcional por padrão, mas é possível escrever código funcional e ir adaptando. Currying é a técnica de transformar uma função de N parâmetros para uma função com 1 parâmetro, sendo que, para cada parâmetro é retornado uma nova função.
+
+Hoisting
+Significa levantar ou suspender algo, este comportamento acontece no javascript na declaração de algumas variáveis e funções.
+	- Hoisting de variável: só eleva a criação da variável e não sua atribuição
+	- Hoisting de função: é elevada até o topo.
+
+Imutabilidade
+Também é um conceito de linguagem funcional, que basicamente siginifica a imutabilidade dos dados. Arrays, Objetos, Variáveis não são mutáveis, eles são clonáveis com alterações. (spring operator - ...user p/ clonar)
+
+Tipos e variáveis
+	Antes: escopo global, escopo de função
+	Depois do let/const: escopo de bloco {}  foi adicionado
+
+var nomeVar = "Atributo"
+let nomeLet = "Atributo" 
+const nomeConst = "Atributo" 
+   - se for tipo primitivo (string por exemplo) não pode mudar o valor
+   - se for tipo por referêcia (um objeto por exemplo) é permitido alterar suas propriedades, mas não aonde ele está apontando
+
+-------------------------------------------------------------------------
+MÓDULO 02 - Tipos, variáveis, operadores, condicionais e repetição em JavaScript ES6
+AULA 01 - Tipos e variáveis
+
+String - textos
+Number - números 
+Boolean - true/false
+Null - nulo
+Undefined - existe, porém não definida
+Symbol - valores únicos
+Object - objeto
+Function - objeto que pode ser chamado
+Array - objeto com relações de índices e tipos
+
+
+AULA 02 - Functions e operadores
+
+Functions e Arrays também são objetos. Sendo que funções são objetos que permitem serem chamados.
+Prática - olhar exemplos no vscode.
+
+Operadores:
+- Aritméticos
+- Atribuição
+- Comparação
+- Condicional
+- Lógicos
+
+
+AULA 03 - Spread, estruturas condicionais e repetição
+
+-------------------------------------------------------------------------
+MÓDULO 03 - Introdução a orientação a objetos
+AULA 01 - Introdução a orientação a objetos
+AULA 02 - Introdução a Design Patterns
+
+-------------------------------------------------------------------------
+MÓDULO 04 - Manipulação e iteração de arrays
+AULA 01 - Criando a manipulação arrays
+AULA 02 - Iterar, buscar e transformar elementos
