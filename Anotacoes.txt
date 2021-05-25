@@ -93,9 +93,76 @@ Operadores:
 - Comparação
 - Condicional
 - Lógicos
-
+- Unitarios
+- Binarios
 
 AULA 03 - Spread, estruturas condicionais e repetição
+
+Spread: clonar arrays pelo ...nomeArray
+
+Condicionais:
+- if
+- elseif
+- else
+- switch case
+
+if (condicao){
+	// code
+}elseif (condicao2){
+	// code
+}else (condicao3){
+	// code
+}
+
+switch (expressao) {
+	case valor1;
+	[break;]
+	case valor2;
+	[break;]
+
+	default:
+	[break;]
+}
+
+Repetição
+- for
+- while
+- do...while
+- for...in
+	-- continue
+	-- break
+
+----------------------------------------------------
+for ([expressaoInicial]; [condicao], [incremento]){
+	// declaração
+}
+
+----------------------------------------------------
+while (condicao){
+	// declaração
+}
+
+----------------------------------------------------
+do {
+	// declaração
+} while (condicao)
+
+----------------------------------------------------
+let arr = [3,5,7];
+arr.foo = "hello";
+
+for (let i in arr) {
+	console.log(i); 	//log: "0", "1", "2", "foo"
+}
+
+for (let i of arr) {
+	console.log(i); 	//log: "3", "5", "7"
+}
+
+----------------------------------------------------
+break; cancela o laço
+continue; pula uma interação
+
 
 -------------------------------------------------------------------------
 MÓDULO 03 - Introdução a orientação a objetos
